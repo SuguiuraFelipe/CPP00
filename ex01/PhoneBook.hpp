@@ -6,13 +6,16 @@
 /*   By: fsuguiur <fsuguiur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/13 12:01:21 by fsuguiur          #+#    #+#             */
-/*   Updated: 2025/12/13 13:11:36 by fsuguiur         ###   ########.fr       */
+/*   Updated: 2026/01/05 17:36:00 by fsuguiur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PHONEBOOK_HPP
 # define PHONEBOOK_HPP
 #include "Contact.hpp"
+#include <cstdlib>
+#include <unistd.h>
+#include <iomanip>
 
 class PhoneBook {
     private:
@@ -23,6 +26,7 @@ class PhoneBook {
         ~PhoneBook();
         void Add();
         void Search();
-        void Exit();
+        bool Exit();
+        std::string FormatTable(std::string);
 };
 #endif

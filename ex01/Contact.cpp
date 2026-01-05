@@ -6,7 +6,7 @@
 /*   By: fsuguiur <fsuguiur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/13 12:23:00 by fsuguiur          #+#    #+#             */
-/*   Updated: 2025/12/13 13:12:39 by fsuguiur         ###   ########.fr       */
+/*   Updated: 2026/01/05 17:46:10 by fsuguiur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ Contact::Contact(
     this->dark_secret = dark_secret;
 };
 
+Contact::Contact() {};
 Contact::~Contact() {};
 
 std::string Contact::getFirstName() {
