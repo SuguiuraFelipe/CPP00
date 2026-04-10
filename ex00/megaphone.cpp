@@ -6,11 +6,12 @@
 /*   By: fsuguiur <fsuguiur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/13 10:52:45 by fsuguiur          #+#    #+#             */
-/*   Updated: 2025/12/13 11:32:12 by fsuguiur         ###   ########.fr       */
+/*   Updated: 2026/04/10 15:19:25 by fsuguiur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
+#include <cctype>
 
 int main(int ac, char **av)
 {
@@ -33,4 +34,5 @@ int main(int ac, char **av)
         i++;
     }
     std::cout << std::endl;
+    return 0;
 }
