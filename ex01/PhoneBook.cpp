@@ -6,7 +6,7 @@
 /*   By: fsuguiur <fsuguiur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/13 13:12:05 by fsuguiur          #+#    #+#             */
-/*   Updated: 2026/04/10 16:59:34 by fsuguiur         ###   ########.fr       */
+/*   Updated: 2026/04/15 14:14:16 by fsuguiur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ void PhoneBook::Add() {
     std::cout << "CONTACT ADDED SUCCESSFULLY to index " << i << "." << std::endl;
 };
 
-std::string PhoneBook::FormatTable(std::string str) {
+std::string PhoneBook::FormatTable(const std::string str) {
 	int len;
 	len = str.length();
 	if(len > 10)
@@ -132,7 +132,5 @@ void PhoneBook::Search() {
 
 bool PhoneBook::Exit() {
 	std::cout << "Turning off the PhoneBook..." << std::endl;
-	sleep(1);
-	std::cout << "GoodBye !" << std::endl;
 	return true;
 }

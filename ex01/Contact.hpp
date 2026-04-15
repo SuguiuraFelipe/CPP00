@@ -6,7 +6,7 @@
 /*   By: fsuguiur <fsuguiur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/13 12:05:42 by fsuguiur          #+#    #+#             */
-/*   Updated: 2026/04/10 15:09:34 by fsuguiur         ###   ########.fr       */
+/*   Updated: 2026/04/15 14:12:50 by fsuguiur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,11 @@ class Contact {
         );
         Contact();
         ~Contact();
-        std::string getFirstName(void);
-        std::string getLastName(void);
-        std::string getNickname(void);
-        std::string getPhoneNumber(void);
-        std::string getDarkSecret(void);
+        std::string getFirstName(void) const;
+        std::string getLastName(void) const;
+        std::string getNickname(void) const;
+        std::string getPhoneNumber(void) const;
+        std::string getDarkSecret(void) const;
         
         void setFirstName(std::string first_name);
         void setLastName(std::string last_name);

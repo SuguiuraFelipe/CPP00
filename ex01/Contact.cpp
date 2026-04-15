@@ -6,7 +6,7 @@
 /*   By: fsuguiur <fsuguiur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/13 12:23:00 by fsuguiur          #+#    #+#             */
-/*   Updated: 2026/04/10 15:07:12 by fsuguiur         ###   ########.fr       */
+/*   Updated: 2026/04/15 14:11:36 by fsuguiur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,23 +29,23 @@ Contact::Contact(
 Contact::Contact() {};
 Contact::~Contact() {};
 
-std::string Contact::getFirstName() {
+std::string Contact::getFirstName() const {
     return this->first_name;
 };
 
-std::string Contact::getLastName() {
+std::string Contact::getLastName() const {
     return this->last_name;
 };
 
-std::string Contact::getNickname() {
+std::string Contact::getNickname() const {
     return this->nickname;
 };
 
-std::string Contact::getPhoneNumber() {
+std::string Contact::getPhoneNumber() const {
     return this->phone_number;
 };
 
-std::string Contact::getDarkSecret() {
+std::string Contact::getDarkSecret() const {
     return this->dark_secret;
 };
 

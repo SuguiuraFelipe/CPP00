@@ -6,12 +6,11 @@
 /*   By: fsuguiur <fsuguiur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/13 11:59:22 by fsuguiur          #+#    #+#             */
-/*   Updated: 2026/04/10 16:59:02 by fsuguiur         ###   ########.fr       */
+/*   Updated: 2026/04/15 14:15:13 by fsuguiur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PhoneBook.hpp"
-#include "Contact.hpp"
 
 int main() {
     PhoneBook phonebook;
@@ -24,16 +23,13 @@ int main() {
         if (!std::getline(std::cin, input))
             break;
         if(input == "ADD") {
-            // std::system("clear"); 
             phonebook.Add();
         }
         else if(input == "SEARCH") {
-            // std::system("clear");
             phonebook.Search();
         }
         else if(input == "EXIT")
         {
-            // std::system("clear"); 
             if(phonebook.Exit())
                 break;
         }
